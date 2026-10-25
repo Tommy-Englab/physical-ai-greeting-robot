@@ -1,0 +1,42 @@
+# 秘密情報
+.secrets/
+*.env
+.env
+
+# ROS 2 / colcon ビルド生成物
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 大容量メディア（提出用動画などはコミットしない）
+media/*.mp4
+media/*.mov
+media/*.zip
+
+# 検証用スクリーンショット（Gazebo目視の一時成果物。提出コードに不要）
+workspace/shots/
+# 保存計画（savedモード再生用。実行時に生成される一時成果物）
+workspace/plans/
+
+# 講座資料（著作物のためGitHubに上げない。案内のREADMEだけは追跡する）
+docs/course-materials/*
+!docs/course-materials/README.md
+
+# 計画ノート（個人的な判断・経緯のメモ。提出物には含めない）
+docs/project-notes.md
+
+# レポート下地（レポートPDFは別提出のためGitHubには含めない）
+docs/report-draft.md
+
+# OS / エディタ
+.DS_Store
+*.swp
+
+# エージェント作業ログ（レビュー残骸等。コミットしない）
+.agents/
